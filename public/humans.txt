@@ -1,0 +1,23 @@
+/* SITIO */
+
+	Nombre: Piclike
+	Objetivo: Red social para compartir imágenes
+
+/* EQUIPO */
+
+	Administrador y diseñador: Pedro Lamas García (iamas92)
+        Licencia: MIT
+	Reconocimiento: Copyright (c) 2015 iamas92
+	De: Madrid, España
+
+/* GRACIAS A */
+
+	Profesor: Chema Alonso Josa
+	De: Madrid, España
+
+/* SITIO WEB */
+
+	Última actualización: 30/5/2015
+	Idioma: Castellano
+	Tecnologías: PHP, HTML5, CSS3, JavaScript
+	Entornos de desarrollo: Sublime Text, NetBeans, Laravel, jQuery

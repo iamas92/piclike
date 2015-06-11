@@ -1,0 +1,340 @@
+/*
+ * Piclike
+ * CSS para toda la aplicación
+ * Licencia MIT
+ * Copyright (c) 2015 iamas92
+ */
+@import "reset.css";
+@font-face {
+    font-family: enso;
+    src: url("../fonts/enso.woff") format("woff"),
+        url("../fonts/enso.ttf") format("truetype"),
+        url("../fonts/enso.eot") format("embedded-opentype");
+}
+html, header, footer {
+    background-color: #f77f00;
+}
+body {
+    background-color: #ffffff;
+}
+::-moz-selection {
+    background-color: #f77f00;
+}
+::selection {
+    background-color: #f77f00;
+}
+header, #navbar, footer, #footer {
+    width: 100%;
+    height: 60px;
+}
+a, p, input, button, label, textarea, h2, select, output {
+    font-family: helvetica, sans-serif;
+}
+a, p, input, button, label, textarea, select, output {
+    font-size: 1em;
+}
+p, input, label, textarea, h2, select, output {
+    color: #404040;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+h2 {
+    font-size: 1.5em;
+}
+#logo-link, #main a {
+    color: #0080ff;
+}
+.center {
+    text-align: center;
+}
+.centered {
+    display: block;
+    margin: auto;
+}
+.right {
+    text-align: right;
+}
+.justify {
+    text-align: justify;
+    width: 600px;
+    margin: auto;
+}
+.last {
+    margin-bottom: 10px;
+}
+#main {
+    clear: both;
+}
+/* Cabecera */
+#cookies {
+    border: 2px solid #0080ff;
+    padding: 10px;
+}
+#logo, #search {
+    float: left;
+}
+#logo, #login {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#search, #login {
+    margin-top: 14px;
+}
+#login {
+    float: right;
+}
+h1 {
+    font-family: enso, helvetica, sans-serif;
+    font-size: 3em;
+}
+/* Búsqueda */
+#results {
+    background-color: #ffffff;
+    border: 2px solid #0080ff;
+    position: absolute;
+    z-index: 10;
+    top: 44px;
+    width: 324px;
+}
+#results a {
+    display: block;
+    padding: 4px 12px;
+    margin-right: 70px;
+    color: #404040;
+}
+#results p {
+    float: right;
+    color: #0080ff;
+    bottom: 20px;
+    position: relative;
+    right: 12px;
+}
+/* Formularios */
+#forms {
+    width: 1200px;
+    margin: auto;
+}
+#forms > * {
+    float: left;
+}
+.form {
+    margin: auto;
+    width: 400px;
+}
+.form-default {
+    width: 228px;
+    margin: auto;
+}
+label {
+    display: block;
+    padding: 8px 0px 8px 14px;
+}
+input, output {
+    height: 20px;
+    width: 200px;
+}
+input, button, textarea, select, output {
+    outline: none;
+    padding: 4px 12px;
+    line-height: 20px;
+}
+output {
+    display: block;
+}
+textarea {
+    resize: none;
+    width: 572px;
+}
+select {
+    width: 228px;
+}
+#inp-search {
+    position: relative;
+    float: left;
+    border: 2px solid #ffffff;
+    width: 300px;
+}
+.inp-default, #inp-search:focus {
+    border: 2px solid #0080ff;
+}
+button {
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 32px;
+    line-height: 24px;
+}
+button img {
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+.btn-primary {
+    float: right;
+}
+.btn-default, .btn-nav {
+    background-color: #404040;
+}
+.btn-default:hover, .btn-default:focus, .btn-nav:hover, .btn-nav:focus {
+    background-color: #000000;
+}
+.btn-primary {
+    background-color: #0080ff;
+    margin-left: 10px;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #004080;
+}
+.profile {
+    margin: auto;
+    display: block;
+}
+.error {
+    color: #f77f00;
+}
+.success {
+    color: #0080ff;
+}
+/* Pie de página */
+footer {
+    clear: both;
+}
+#links ul {
+    height: 18px;
+    padding-top: 21px;
+    text-align: center;
+}
+#links ul li, #links ul li p {
+    line-height: 18px;
+    display: inline;
+}
+#links a {
+    color: #404040;
+}
+#links ul li + li:before {
+    content: "|";
+    color: #0080ff;
+    font-family: helvetica, sans-serif;
+    font-size: 1em;
+}
+/* Marco de foto */
+#photos-content, #photo-wrapper {
+    margin: 20px;
+    float: left;
+    right: 310px;
+    position: absolute;
+}
+.wide {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#photo figure {
+    text-align: center;
+}
+#photo img {
+    margin: auto;
+    width: 70%;
+}
+#title, #social, #comments-wrapper {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#title {
+    width: 75%;
+    float: left;
+}
+#social {
+    width: 25%;
+    float: right;
+}
+#like {
+    float: right;
+    line-height: 32px;
+}
+#comments-wrapper {
+    width: 100%;
+    clear: both;
+}
+.comment {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.comment img {
+    float: left;
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+}
+.comment p {
+    margin-left: 52px;
+    margin-top: 10px;
+}
+#comment-add {
+    margin: auto;
+    width: 600px;
+}
+.comment-delete {
+    margin-left: 40px;
+}
+/* Información de foto */
+#info-wrapper {
+    width: 290px;
+    float: right;
+    margin-right: 20px;
+}
+#info-wrapper section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#message {
+    border: 2px solid #0080ff;
+}
+#user, #categories, .manage {
+    border: 2px solid #f77f00;
+}
+#user {
+    height: 80px;
+}
+#user img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+}
+#user p {
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+#categories a + a:before {
+    content: "|";
+    color: #404040;
+    font-family: helvetica, sans-serif;
+    font-size: 1em;
+}
+/* Contenedor de fotos */
+#photos-empty {
+    margin: 20px;
+    float: left;
+    right: 310px;
+    position: absolute;
+    width: 80%;
+    line-height: 100px;
+}
+#photos-content, .wide {
+    text-align: center;
+}
+#photos-content figure, .wide figure {
+    display: inline;
+}
+#photos-content img, .wide img {
+    max-height: 230px;
+    margin-bottom: 10px;
+}
+#photos-content figure + figure:before, .wide figure + figure:before {
+    content: "";
+    margin-right: 10px;
+}
